@@ -71,7 +71,7 @@
             <ul class="navbar-nav">
 
             <?php
-            if(empty($_COOKIE['Username'])){
+            if(empty($_COOKIE['userid'])){
                 echo'
                 <li class="nav-item">
                     <a class="nav-link" href="./Login.php">Login</a>
