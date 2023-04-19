@@ -81,7 +81,7 @@
             <a class="nav-link" href="./forum.html">Forum</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="./aboutus.html">About us</a>
+            <a class="nav-link" href="./aboutus.php">About us</a>
         </li>
         </ul>     
     </div>
