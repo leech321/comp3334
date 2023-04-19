@@ -1,0 +1,58 @@
+body,html{
+    height:100%;
+}
+
+#TopBg{
+    height: 50%;
+    margin: 0;
+    background-image: url('../img/7234325.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#QandA{
+    display: flex;
+    margin: auto;
+    margin-top: 10px;
+}
+
+#QT{
+    margin:auto; 
+    width:40%;
+    text-align: center;
+}
+
+/*.T1{
+    margin:auto; 
+    padding-left: 10px;
+    text-align: left;
+    width:60%
+}*/
+
+.Ans{
+    border: 2px solid ;
+    padding: 10px;
+    box-shadow: 5px 10px #888888;
+}
+
+input{
+    margin-bottom: 20px;
+}
+
+.Comment{
+    background-color: aquamarine;
+}
+
+.Userbox{
+    border: 2px solid black;
+}
+
+.C1{
+    font-size:x-large;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+ 
+.C2{
+    margin-top: 10px;
+}

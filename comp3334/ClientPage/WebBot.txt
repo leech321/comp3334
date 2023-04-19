@@ -1,0 +1,63 @@
+<div id="Blog-design">
+        <div class="waviy">
+            <span style="--i:1">B</span>
+            <span style="--i:2">l</span>
+            <span style="--i:3">o</span>
+            <span style="--i:4">g</span>
+            <span style="--i:5">B</span>
+            <span style="--i:6">e</span>
+            <span style="--i:7">l</span>
+            <span style="--i:8">o</span>
+            <span style="--i:9">w</span>
+        </div>
+    </div>
+
+
+
+    <div id="Blog">
+    <div id="BF">
+        <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" style="text-align:center">
+           
+            <input type="text" name="title" id="Title" class="form-control" placeholder="Title"/>
+            <br>
+            <label for="ques"> Question :</label>
+            <textarea id="Ques" name="ques" rows="4" cols="50" class="form-control" > </textarea>
+            <br>
+
+            <input type="submit" value="Raise Question"/>
+            <input type="reset" value="Reset"/>
+        </form>
+    </div>
+        
+    <hr>
+
+
+        <div class="row">
+
+
+        <?php
+         include 'auth.php';
+         while ($row = $BlogData -> fetch_assoc()){
+            if (htmlspecialchars($_SERVER["PHP_SELF"]) == $row['path']){
+                $NewPath = trim($row['title'], "?");
+                echo '
+                <div class="col-sm-6">
+                    <div class="card text-white bg-dark mt-3">
+                        <div class="card-body">
+                            <h5 class="card-title ">'. $row['userid'] .'</h5>
+                            <h5 class="card-title">'. $row['title'] .'</h5>
+                            <p class="card-text">'. $row['ques'] .'</p>
+                            <a href="../Question/'. $NewPath  .'.php" class="btn btn-light">Read More </a>
+                        </div>
+                    </div>
+                </div>
+            
+                ';
+            }
+         }
+        ?>
+    
+        </div>
+</body>
+
+</html>

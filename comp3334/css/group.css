@@ -1,0 +1,104 @@
+/*#Box1{
+    position: relative;
+    height: 600px; 
+    width: 1085px; 
+    background-image: url('../img/background1.png');
+    cursor: url('../img/ezgif-4-a255ed2386.gif'),auto;
+    align-items: center;
+    margin: auto;
+}*/
+
+
+.animate-charcter{
+    text-transform: uppercase;
+    text-align: center;
+    background-image: linear-gradient(
+        -110deg,
+        #4998bd 0%,
+        #803bc9 29%,
+        #9b7280 67%,
+        #63db5f 100%
+    );
+    background-size: 210% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: ChangeColor 2s linear infinite;
+    display: inline-block;
+    font-size: 190px;
+    }
+
+@keyframes ChangeColor {
+to {
+    background-position: 190% center;
+}
+}
+
+.waviy {
+    position: relative;
+    
+}
+
+.waviy span {
+    position: relative;
+    display: inline-block;
+    font-size: 40px;
+    color: black;
+    text-transform: uppercase;
+    animation: flip 2s infinite;
+    animation-delay: calc(.2s * var(--i))
+}
+
+@keyframes flip {
+    0%,80% {
+        transform: rotateY(360deg) 
+}
+}
+
+
+#Blog-design{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+
+
+
+#TextColorBox{
+    text-align: center;
+}
+
+
+
+#TopBox{
+    display: flex;
+    justify-content: center;
+}
+
+#SecondBox{
+    display: flex;
+    justify-content: center;
+}
+
+#ThirdBox{
+    display: flex;
+    justify-content: center;
+}
+
+.Type{
+    
+    width: 300px;
+    text-align: left;
+}
+
+.Data{
+    
+    width: 800px;
+    padding-left: 10px;
+}
+
+#Blog{
+    margin: auto;
+}
